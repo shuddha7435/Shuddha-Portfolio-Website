@@ -1,0 +1,406 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #444;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  margin: 0px;
+  background: ghostwhite;
+}
+
+nav {
+  background: #2b2b31;
+  color: white;
+  padding: 1%;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+main{
+  padding: 5%;
+}
+
+.navbar a:visited {
+  color: ghostwhite;
+}
+.bio > p {
+  margin-top: 40px;
+}
+
+
+.navbar a:link {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+.navbar a:hover {
+  color: #b2cce5;
+}
+
+#headshot {
+  border: 2px rgb(49, 47, 47) solid;
+  border-radius: 5px;
+  width:100%
+}
+
+.contact a:visited {
+  color: ghostwhite;
+  display: flex;
+  justify-content: space-between;
+}
+.contact a:link {
+  text-decoration: none;
+  color: lightgrey;
+}
+.contact a:visited {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+
+a.gitlinks:link {
+  color: #7c7c7c;
+  text-decoration: none;
+}
+
+a.gitlinks:visited {
+  color: #7c7c7c;
+}
+.git ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.git ul li {
+  margin-right: 50px;
+  font-size: 20px;
+}
+
+.gitlogo {
+  width: 30px;
+  border: none;
+}
+
+
+.hero {
+  font-family: "Francois One", sans-serif;
+  padding: 50px;
+  background-image: linear-gradient(to top right, rgb(98, 95, 121), #2b2b31);
+  color: #f8f6f9;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+}
+ul {
+  justify-content: space-evenly;
+  display: flex;
+  list-style-type: none;
+  padding-inline-start: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.screenshot {
+  width: 60%;
+  border:2px solid black
+}
+
+footer {
+  background-color: #2b2b31;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.contact p {
+  padding: 7px;
+  margin: 0px;
+}
+
+h1 {
+  margin: 0px;
+  text-align: center;
+  padding: 10px;
+}
+
+h2 {
+  margin: 0px;
+  text-align: center;
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 811px) {
+  .headshot {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px 30px;
+  }
+
+  main {
+    padding: 60px;
+  }
+
+  nav {
+    background: #2b2b31;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .hero {
+    padding-top: 60px;
+  }
+  .project h3 {
+    font-size: 0.9em;
+  }
+
+  .desktop-display > ul {
+    display: none;
+  }
+  .git ul {
+    margin-top: 20px;
+  }
+  a.gitlinks {
+    font-size: 1.5em;
+  }
+  a.gitlinks:visited {
+    color: #7c7c7c;
+  }
+
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    main {
+      padding: 60px 80px;
+    }
+    .header {
+      padding: 0px 40px;
+    }
+  }
+
+
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    main {
+      padding: 60px 100px;
+    }
+    .header {
+      padding: 0px 50px;
+    }
+  }
+
+  p {
+    line-height: 2em;
+  }
+
+  li {
+    list-style-type: none;
+    font-size: 20px;
+  }
+
+  img {
+    border: 3px inset gray;
+  }
+
+  .hamburger {
+    display: flex;
+    justify-content: flex-start;
+  }
+  footer {
+    padding: 20px;
+  }
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1224px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  main {
+    padding: 80px;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+  .hero h1 {
+    text-align: left;
+    padding: 0px;
+  }
+
+  .main-nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .header {
+    align-self: center;
+    margin-right: 25%;
+  }
+  #headshot {
+    margin-right: 30px;
+  }
+
+  a:visited {
+    color: ghostwhite;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact ul {
+    padding: 20px;
+  }
+
+  .contact ul li {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1224px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .navbar-toggle {
+    display: none;
+  }
+  .main-nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .header {
+    text-align: left;
+    align-self: center;
+    margin-left: 10%;
+    padding-right: 90px;
+  }
+  .navbar {
+    padding: 10px;
+  }
+
+  main {
+    padding: 5% 15% 10%;
+  }
+  .desktop-display {
+    display: flex;
+    margin: 50px 0 20px 0;
+  }
+  .desktop-display ul {
+    margin-left: 20px;
+  }
+  .desktop-display ul li {
+    margin-right: 20px;
+  }
+  .desktop-display > h3 {
+    margin-block-start: 0px;
+    display: inline-block;
+  }
+  img {
+    border: 10px outset rgb(98, 95, 121);
+  }
+  .git ul {
+    display: none;
+  }
+
+  .bio > p {
+    font-size: 1.2em;
+    line-height: 2em;
+  }
+  footer {
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+
+@media only screen and (min-width: 1224px) {
+  body {
+    font-size: 20px;
+  }
+
+  main {
+    padding: 60px 200px 60px;
+  }
+
+  h2 {
+    margin: 0px;
+    text-align: center;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .header {
+    align-self: center;
+    padding: 20px 150px 20px 50px;
+  }
+
+  .desktop-display {
+    display: flex;
+    margin: 50px 0 20px 0;
+  }
+  .desktop-display h3 {
+    margin-block-start: 0px;
+    display: inline;
+  }
+  .desktop-display ul {
+    margin-left: 20px;
+  }
+  .desktop-display ul li {
+    margin-right: 20px;
+  }
+  .git ul {
+    display: none;
+  }
+  .screenshot img {
+    width: 50%;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .main-nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  img {
+    border: 10px outset rgb(98, 95, 121);
+  }
+
+  .contact a:hover {
+    text-decoration: none;
+    color: #b2cce5;
+  }
+  .contact ul {
+    padding: 20px;
+  }
+
+  .contact ul li {
+    font-size: 23px;
+  }
+  footer {
+    margin-top: 100px;
+    padding: 20px;
+  }
+
+  a.gitlinks:hover {
+    text-decoration: underline;
+  }
+}
